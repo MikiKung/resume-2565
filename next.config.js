@@ -8,9 +8,6 @@ module.exports = {
       page: "/",
     },
   }),
-  images: {
-    loader: 'imgix',
-  },
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

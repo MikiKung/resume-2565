@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Niramit:wght@300&display=swap");
 .main {
     display: block;
     width: 100%;
@@ -27,7 +27,7 @@
     padding-right: 20px;
     cursor: default;
     color: rgb(209, 209, 209);
-    font-family: 'Niramit', sans-serif;
+    font-family: "Niramit", sans-serif;
 }
 .item:not(:first-child):hover {
     padding-left: 20px;
@@ -36,21 +36,25 @@
     height: 100%;
     transition: 1.2s;
 }
-
-@media only screen and (max-width: 600px){
-.grid{
+.Navbar {
     display: none;
 }
-.Navbar{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-
-}
-.NavbarResponsive{
-    color: white;
-    height: 60px;
-    margin-top: 15px;
-}
+.NavbarResponsive {
+    display: none;
 }
 
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: none;
+    }
+    .Navbar {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+    .NavbarResponsive {
+        color: white;
+        height: 60px;
+        margin-top: 15px;
+    }
+}
