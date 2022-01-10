@@ -2,15 +2,16 @@
 const isProd = process.env.NODE_ENV === "production";
 const path = require('path')
 module.exports = {
-  target: 'serverless',
+  // target: 'serverless',
   exportPathMap: () => ({
     "/": {
       page: "/",
     },
   }),
-  // images: {
-  //   loader: 'imgix',
-  // },
+  images: {
+    loader: 'imgix',
+  },
+  // reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
