@@ -8,9 +8,9 @@ module.exports = {
       page: "/",
     },
   }),
-  images: {
-    loader: 'imgix',
-  },
+  // images: {
+  //   loader: 'imgix',
+  // },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
