@@ -1,0 +1,217 @@
+// $base-num: 500px;
+// $base-time: 2s;
+//     @for $i from 1 through 3 {
+//         $calnum: $base-num - (10px * $i);
+//         $caltime: $base-time - (0.25 * $i);
+//         .littleSqare_#{$i} {
+//             width: 7px;
+//             height: 7px;
+//             background-color: white;
+//             opacity: 0.4;
+//             z-index: 1;
+//             left: $calnum;
+//             position: absolute;
+//             animation-name: sqare;
+//             animation-duration: $caltime;
+//         }
+//     }
+.littleSqare1_1 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 120px;
+    left: 40px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2s;
+}
+.littleSqare1_2 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 120px;
+    left: 30px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 1.5s;
+}
+.littleSqare1_3 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 120px;
+    left: 20px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 1s;
+}
+.littleSqare2_1 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 650px;
+    left: 850px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2.2s;
+}
+.littleSqare2_2 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 650px;
+    left: 840px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 1.7s;
+}
+.littleSqare2_3 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 650px;
+    left: 830px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 1.2s;
+}
+.littleSqare3_1 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 350px;
+    left: 1200px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2.4s;
+}
+.littleSqare3_2 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 350px;
+    left: 1190px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 1.6s;
+}
+.littleSqare3_3 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 350px;
+    left: 1180px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 0.8s;
+}
+.littleSqare4_1 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 420px;
+    left: 370px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2.4s;
+}
+.littleSqare4_2 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 420px;
+    left: 360px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 1.6s;
+}
+.littleSqare4_3 {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 1;
+    top: 420px;
+    left: 350px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 0.8s;
+}
+@media only screen and (max-width: 600px) {
+    .littleSqare1_1 {
+        display: none;
+    }
+    .littleSqare1_2 {
+        display: none;
+    }
+    .littleSqare1_3 {
+        display: none;
+    }
+    .littleSqare2_1 {
+        display: none;
+    }
+    .littleSqare2_2 {
+        display: none;
+    }
+    .littleSqare2_3 {
+        display: none;
+    }
+    .littleSqare3_1 {
+        display: none;
+    }
+    .littleSqare3_2 {
+        display: none;
+    }
+    .littleSqare3_3 {
+        display: none;
+    }
+    .littleSqare4_1 {
+        display: none;
+    }
+    .littleSqare4_2 {
+        display: none;
+    }
+    .littleSqare4_3 {
+        display: none;
+    }
+}
+
+@keyframes sqare {
+    0% {
+        background-color: white;
+    }
+    25% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: white;
+    }
+    75% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: white;
+    }
+}

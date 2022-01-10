@@ -1,0 +1,19 @@
+.main {
+    background-color: #000033;
+    padding-top: 60px;
+}
+.test {
+    color: red;
+}
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.5s;
+}
+.animation:hover {
+    width: 100px;
+    height: 200px;
+    background-color: transparent;
+}
+

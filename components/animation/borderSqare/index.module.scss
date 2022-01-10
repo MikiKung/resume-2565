@@ -1,0 +1,107 @@
+.out1 {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    opacity: 0.4;
+    z-index: 1;
+    top: 200px;
+    left: 450px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2s;
+    border: white solid 2px;
+    animation-name: BorderSqare;
+    animation-duration: 2s;
+}
+.out2 {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    opacity: 0.2;
+    z-index: 1;
+    top: 340px;
+    left: 800px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2s;
+    border: white solid 2px;
+    animation-name: BorderSqare;
+    animation-duration: 1.4s;
+}
+.out3 {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    opacity: 0.1;
+    z-index: 1;
+    top: 650px;
+    left: 170px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2s;
+    border: white solid 2px;
+    animation-name: BorderSqare;
+    animation-duration: 1.6s;
+}
+.out4 {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    opacity: 0.2;
+    z-index: 1;
+    top: 650px;
+    left: 1250px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2s;
+    border: white solid 2px;
+    animation-name: BorderSqare;
+    animation-duration: 2s;
+}
+.out5 {
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    opacity: 0.5;
+    z-index: 1;
+    top: 100px;
+    left: 1450px;
+    position: absolute;
+    animation-name: sqare;
+    animation-duration: 2s;
+    border: white solid 2px;
+    animation-name: BorderSqare;
+    animation-duration: 2s;
+}
+@media only screen and (max-width: 600px){
+    .out1{
+        display: none;
+    }
+    .out2{
+        display: none;
+    }
+    .out3{
+        display: none;
+    }
+    .out4{
+        display: none;
+    }
+    .out5{
+        display: none;
+    }
+}
+
+@keyframes BorderSqare {
+    0% {
+        border: white solid 2px;
+    }
+    25% {
+        border: transparent solid 2px;
+    }
+    75% {
+        border: white solid 2px;
+    }
+    100% {
+        border: transparent solid 2px;
+    }
+}
