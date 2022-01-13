@@ -9,7 +9,8 @@ module.exports = {
     },
   }),
   images: {
-    loader: 'imgix',
+    loader: 'imgix', 
+    path: isProd ? 'https://mikikung.github.io/':'http://localhost:3000'
   },
   // reactStrictMode: true,
   sassOptions: {
