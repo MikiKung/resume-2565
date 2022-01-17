@@ -21,8 +21,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 120px;
-    left: 40px;
+    top: 15%;
+    left: 6%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 2s;
@@ -34,8 +34,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 120px;
-    left: 30px;
+    top: 15%;
+    left: 7%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 1.5s;
@@ -47,8 +47,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 120px;
-    left: 20px;
+    top: 15%;
+    left: 8%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 1s;
@@ -60,8 +60,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 650px;
-    left: 850px;
+    top: 32%;
+    left: 40%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 2.2s;
@@ -73,8 +73,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 650px;
-    left: 840px;
+    top: 32%;
+    left: 41%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 1.7s;
@@ -86,8 +86,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 650px;
-    left: 830px;
+    top: 32%;
+    left: 42%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 1.2s;
@@ -99,8 +99,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 350px;
-    left: 1200px;
+    top: 60%;
+    left: 83%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 2.4s;
@@ -112,8 +112,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 350px;
-    left: 1190px;
+    top: 60%;
+    left: 84%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 1.6s;
@@ -125,8 +125,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 350px;
-    left: 1180px;
+    top: 60%;
+    left: 85%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 0.8s;
@@ -138,8 +138,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 420px;
-    left: 370px;
+    top: 82%;
+    left: 15%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 2.4s;
@@ -151,8 +151,8 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 420px;
-    left: 360px;
+    top: 82%;
+    left: 16%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 1.6s;
@@ -164,19 +164,19 @@
     background-color: white;
     opacity: 0.4;
     z-index: 1;
-    top: 420px;
-    left: 350px;
+    top: 82%;
+    left: 17%;
     position: absolute;
     animation-name: sqare;
     animation-duration: 0.8s;
     animation-iteration-count: 2;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-device-width: 900px) {
     .littleSqare1_1 {
-        display: none;
+        display: none !important;
     }
     .littleSqare1_2 {
-        display: none;
+        display: none !important;
     }
     .littleSqare1_3 {
         display: none;

@@ -1,20 +1,15 @@
 import classes from "./index.module.scss"
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from "react"
+import Link from 'next/link'
+
 
 export default function Navbar() {
     return <div className={classes.main}>
-        <div className={classes.grid}>
-            <span className={classes.item}></span>
-            <span className={classes.item} >เเนะนำตัว</span>
-            <span className={classes.item}>ประวัติการศึกษา</span>
-            <span className={classes.item}>Framework</span>
-            <span className={classes.item}>ผลงาน</span>
-        </div>
-        <div className={classes.Navbar}>
-            <FontAwesomeIcon icon={faBars} className={classes.NavbarResponsive} />
-        </div>
-
+        {/* <div className={classes.nav}> */}
+            <Link href='#Recommend' ><span className={classes.item} >Recommand</span></Link>
+            <Link href={'#Education'}><span className={classes.item}>Education</span></Link>
+            <span className={classes.item}>skill</span>
+            <span className={classes.item}>project</span>
+        {/* </div> */}
     </div>
 }
