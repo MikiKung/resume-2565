@@ -5,4 +5,5 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Itim', cursive;
+    cursor: default;
 }
