@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-html {
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+html,
+body {
   scroll-behavior: smooth;
-  font-family: 'Varela Round', sans-serif !important;
+  font-family: 'Itim', monospace;
   cursor: default;
 }
