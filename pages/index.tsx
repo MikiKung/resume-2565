@@ -8,9 +8,42 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import emailjs from '@emailjs/browser'
 
 //paralaxx animation
 export default function Home() {
+  const [name, setName] = useState<string>('')
+  const [email, setEmail] = useState<string>('')
+  const [message, setMessage] = useState<string>('')
+  const [loading, setLoading] = useState<boolean>(false)
+  const loadingRef = useRef<boolean>(false)
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
+    e.preventDefault()
+
+    if (loadingRef.current) return
+
+    loadingRef.current = true
+    setLoading(true)
+
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID!,
+      {
+        from_name: name,
+        from_email: email,
+        message: message,
+      },
+      process.env.NEXT_PUBLIC_EMAIL_JS_USER_ID!,
+    )
+
+    window.alert('send email success')
+    setName('')
+    setEmail('')
+    setMessage('')
+    loadingRef.current = false
+    setLoading(false)
+  }
+
   library.add(fab, fas)
   const [ScrollY, setScrollY] = useState(0)
 
@@ -275,8 +308,7 @@ export default function Home() {
                     Research to Market 2020 (Evoligence)
                   </p>
                   <p className={classes.bioEx}>
-                    a platform to teach children in Executive
-                    Functions.Qualified to the round of 16 regional teams.
+                    a platform to teach children in Executive Functions.
                   </p>
                   <div className={classes.allImgEx}>
                     <img className={classes.imgEx} src="./r2m1.jpg" />
@@ -301,26 +333,46 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           <div className={classes.contact} id="Contact">
             <p className={classes.textSkill}>Contact</p>
-            <div className={classes.outContact}>
+            <form onSubmit={handleSubmit} className={classes.outContact}>
               <div className={classes.allContact}>
                 <p className={classes.textContact}>Name</p>
-                <input className={classes.contactInp} type="text" />
+                <input
+                  className={classes.contactInp}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  required
+                />
                 <p className={classes.textContact}>Email</p>
-                <input className={classes.contactInp} type="text" />
+                <input
+                  className={classes.contactInp}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                />
                 <p className={classes.textContact}>Message</p>
-                <input className={classes.contactInp2} type="text" />
-                <div className={classes.Btn}>
-                  <span className={classes.BtnInp}>submit</span>
-                </div>
+                {/* <input  type="text" /> */}
+                <textarea
+                  className={classes.contactInp2}
+                  name="messsage"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  id="masssage"
+                ></textarea>
+                <button type="submit" className={classes.Btn}>
+                  <span className={classes.BtnInp}>
+                    {loading?<img src="./load.svg" alt="load" style={{height:20}} className='mr-3 animate-spin' />:<p></p>}
+                    <p> submit </p>
+                  </span>
+                </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </main>
-      <footer>{/* <p>Peeranut Moonrut</p>
-        <p>&copy; </p> */}</footer>
     </div>
   )
 }
