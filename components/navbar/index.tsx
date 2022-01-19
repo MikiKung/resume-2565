@@ -10,6 +10,7 @@ export default function Navbar() {
             <Link href='#Skill'><span className={classes.item}>Skill</span></Link>
             <Link href='#Project'><span className={classes.item}>Project</span></Link>
             <Link href='#Experience'><span className={classes.item}>Experience</span></Link>
+            <Link href='#Contact'><span className={classes.item}>Contact</span></Link>
         {/* </div> */}
     </div>
 }

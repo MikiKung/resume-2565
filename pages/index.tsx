@@ -2,7 +2,7 @@ import Head from 'next/head'
 import classes from './index.module.scss'
 import Navbar from '@/components/navbar'
 import Animation from '@/components/animation/index'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -203,7 +203,8 @@ export default function Home() {
                       bot discord tell learning schedule
                     </p>
                     <p className={classes.projectBio}>
-                      bot discord for tell learning schedule. have 5 command for use it. use in software engineering UP 64/2. (deployed)
+                      bot discord for tell learning schedule. have 5 command for
+                      use it. use in software engineering UP 64/2. (deployed)
                     </p>
                     <div className={classes.allType}>
                       <FontAwesomeIcon
@@ -218,15 +219,15 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-  
+
               <Link href="https://gitlab.com/se-myteam/se-myteam-project">
                 <a className={classes.oneProject}>
                   <div className={classes.allInfoProject}>
-                    <p className={classes.projectName}>
-                      website for cafe
-                    </p>
+                    <p className={classes.projectName}>website for cafe</p>
                     <p className={classes.projectBio}>
-                      website for cafe. users can buying order and owner can accept or ignore order but this website does't have payment methode 
+                      website for cafe. users can buying order and owner can
+                      accept or ignore order but this website does't have
+                      payment methode
                     </p>
                     <div className={classes.allType}>
                       <FontAwesomeIcon
@@ -234,7 +235,7 @@ export default function Home() {
                         icon={['fas', 'circle']}
                       />
                       <p className={classes.textType}>next js</p>
-                      <p className='p-2'></p>
+                      <p className="p-2"></p>
                       <FontAwesomeIcon
                         className={classes.circleTypeJavascript}
                         icon={['fas', 'circle']}
@@ -247,41 +248,79 @@ export default function Home() {
                   </div>
                 </a>
               </Link>
-              
-              <Link href="https://gitlab.com/se-myteam/se-myteam-project">
-                <a className={classes.oneProject}>
-                  <div className={classes.allInfoProject}>
-                    <p className={classes.projectName}>
-                      website for cafe
-                    </p>
-                    <p className={classes.projectBio}>
-                      website for cafe. users can buying order and owner can accept or ignore order but this website does't have payment methode 
-                    </p>
-                    <div className={classes.allType}>
-                      <FontAwesomeIcon
-                        className={classes.circleTypeNextjs}
-                        icon={['fas', 'circle']}
-                      />
-                      <p className={classes.textType}>next js</p>
-                    </div>
-                    <span className={classes.projectIcon}>
-                      <FontAwesomeIcon icon={['fas', 'arrow-right']} />
-                    </span>
-                  </div>
-                </a>
-              </Link>
             </div>
           </div>
-          <div className={classes.experience} id='Experience'>
+          <div className={classes.experience} id="Experience">
             <p className={classes.textSkill}>Experience</p>
             <div className={classes.allEx}>
-                <div className={classes.oneEx}>
-                  
+              <div className={classes.oneEx}>
+                <p className={classes.headTextEx}>Tournaments & Activities</p>
+                <div className={classes.activityEx}>
+                  <p className={classes.nameEx}>
+                    Startup Thailand League 2020 (Evoligence)
+                  </p>
+                  <p className={classes.bioEx}>
+                    a platform to teach children in Executive Functions. qualify
+                    to go demo day in bangkok.
+                  </p>
+                  <div className={classes.allImgEx}>
+                    <img className={classes.imgEx} src="./stl3.jpg" />
+                    <img className={classes.imgEx} src="./stl2.jpg" />
+                    <img className={classes.imgEx} src="./stl1.jpg" />
+                  </div>
                 </div>
+
+                <div className={classes.activityEx}>
+                  <p className={classes.nameEx}>
+                    Research to Market 2020 (Evoligence)
+                  </p>
+                  <p className={classes.bioEx}>
+                    a platform to teach children in Executive
+                    Functions.Qualified to the round of 16 regional teams.
+                  </p>
+                  <div className={classes.allImgEx}>
+                    <img className={classes.imgEx} src="./r2m1.jpg" />
+                    {/* <img className={classes.imgEx} src="./r2m2.jpg" /> */}
+                    <img className={classes.imgEx} src="./r2m3.jpg" />
+                  </div>
+                </div>
+
+                <div className={classes.activityEx}>
+                  <p className={classes.nameEx}>other</p>
+                  <p className={classes.bioEx}>
+                    I'm is recreation ICT since 2019.
+                  </p>
+                  <p className={classes.bioEx}>
+                    I'm is SMO ICT (Student Leader in ICT) since 2019.
+                  </p>
+                  <p className={classes.bioEx}>
+                    I'm is waing leader (Student Leader in wiang university of
+                    phayao) since 2019.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.contact} id="Contact">
+            <p className={classes.textSkill}>Contact</p>
+            <div className={classes.outContact}>
+              <div className={classes.allContact}>
+                <p className={classes.textContact}>Name</p>
+                <input className={classes.contactInp} type="text" />
+                <p className={classes.textContact}>Email</p>
+                <input className={classes.contactInp} type="text" />
+                <p className={classes.textContact}>Message</p>
+                <input className={classes.contactInp2} type="text" />
+                <div className={classes.Btn}>
+                  <span className={classes.BtnInp}>submit</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
+      <footer>{/* <p>Peeranut Moonrut</p>
+        <p>&copy; </p> */}</footer>
     </div>
   )
 }
